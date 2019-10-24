@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Model API Demo - docs</title>
+  </head>
+  <body>
+    <h3>Model API Documentation</h3>
+    <p>The model API receives a JSON request containing model features:</p>
+    <ul>
+      <li>backers_count - number of backers</li>
+      <li>goal - the amount of money being requested by the campaign</li>
+      <li>spotlight - whether the campaign has spotlight status</li>
+      <li>staff_pick - whether the campaign is a staff pick</li>
+    </ul>
+    <p>The model API returns a JSON response containing:</p>
+    <ul>
+      <li>
+        ESTIMATE - the comparative success of a campaign relative to other campaigns;
+        ranging from 10 to 1, with a 10 signifying poor performance (in the tenth decile)
+        and a 1 signifying best performance (in the first decile).
+      </li>
+      <li>MISSING_DATA - whether or not the received request was missing any feature data</li>
+    </ul>
+  </body>
+</html>
