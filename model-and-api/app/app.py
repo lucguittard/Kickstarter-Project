@@ -89,3 +89,4 @@ if __name__ == '__main__':
 #  And then for running inputs through the predictive model inference the /api page like such:
 #  curl -X GET "http://9d92f013.ngrok.io/api" -H "Content-Type: application/json" --data '{"backers_count":"500", "goal":"1000", "spotlight":"0", "staff_pick":"1"}'
 
+# To push to Heroku follow steps here: https://stackabuse.com/deploying-a-flask-application-to-heroku/
